@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Changa", Arial, sans-serif;
+}
+
+.link,
+.link-lg {
+  @apply mb-16 text-center relative w-fit px-2 mx-auto;
+}
+
+.link-lg {
+  @apply mb-0 ml-3 font-extralight;
+}
+
+.link::after,
+.link-lg::after {
+  @apply content-[''] absolute h-[2px] bg-main bottom-0 left-[50%] -translate-x-1/2 w-0 transition-all duration-500;
+}
+
+.link:hover::after,
+.link-lg:hover::after,
+.active::after {
+  @apply w-full;
+}
+
+.mobile-menu {
+  @apply md:hidden absolute flex items-center justify-center inset-0 w-full h-screen bg-black -z-10 transition-all duration-1000;
+}
+
+.landing {
+  background-image: url("./assets/bg.jpg");
+  @apply fixed inset-0 bg-bottom bg-no-repeat -z-20;
+}
+
+.landing-content {
+  @apply relative h-screen bg-black bg-opacity-30 text-center space-y-96;
+}
+
+.btn {
+  @apply relative text-black rounded-xl px-6 py-4 font-extralight z-10;
+  overflow: hidden;
+}
+
+.btn::before {
+  @apply absolute content-[''] inset-0 bg-main rounded-xl -z-10 transition-all duration-500;
+}
+
+.btn::after {
+  @apply absolute content-[''] -inset-16 bg-white rounded-xl -z-10 transition-all duration-700;
+  transform-origin: top left;
+  rotate: 90deg;
+}
+
+.btn:hover::after {
+  rotate: 0deg;
+}
