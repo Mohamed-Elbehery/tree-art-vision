@@ -15,9 +15,9 @@ const ArtsContent = ({ title, description, imageSrc }) => {
   }, [imageIndex]);
 
   return (
-    <div>
+    <div className="max-w-sm">
       <div>
-        <img src={imageSrc[imageIndex]} alt="art-img" loading="lazy" />
+        <img src={imageSrc[imageIndex]} alt="art-img" />
       </div>
       <div className="relative -top-2 bg-black text-main text-base px-6 py-4 rounded-xl rounded-tr-none rounded-tl-none">
         <h2 className="font-bold text-center">{title || <Skeleton />}</h2>

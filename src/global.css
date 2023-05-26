@@ -24,7 +24,7 @@
 }
 
 .btn {
-  @apply relative bg-main text-black uppercase rounded-xl px-8 py-4 text-base font-extralight z-10;
+  @apply relative bg-main text-black uppercase rounded-xl px-8 py-4 text-[0.925rem] font-extralight z-10;
   overflow: hidden;
 }
 
@@ -67,4 +67,28 @@
 
 .mobile-menu {
   @apply md:hidden absolute flex items-center justify-center inset-0 w-full h-screen bg-black -z-10 transition-all duration-1000;
+}
+
+.testimonials-card {
+  @apply max-w-xs lg:mx-0 mx-auto lg:mt-0 mt-6 bg-black bg-opacity-90 py-10;
+  transform: skewX(-20deg);
+}
+
+.testimonials-body {
+  @apply px-4 w-full text-center text-main space-y-6 text-[0.85rem] font-light;
+  transform: skewX(5deg);
+}
+
+.heading {
+  @apply uppercase text-2xl;
+}
+
+@media screen and (max-width: 400px) {
+  .testimonials-card {
+    transform: skewX(0);
+  }
+
+  .testimonials-body {
+    transform: skewX(0);
+  }
 }

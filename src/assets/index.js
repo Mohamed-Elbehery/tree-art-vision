@@ -19,6 +19,9 @@ import sketch5 from "./66cNaf.jpg";
 import sketch6 from "./66lLfn.jpg";
 import sketch7 from "./66lURR.jpg";
 import sketch8 from "./66lZUG.jpg";
+import article_pexels_1 from "./pexels-photo-1566909.jpeg";
+import article_pexels_2 from "./pexels-photo-1.jpeg";
+import article_pexels_3 from "./pexels-photo-5641889.jpeg";
 
 export {
   bg,
@@ -42,4 +45,7 @@ export {
   sketch6,
   sketch7,
   sketch8,
+  article_pexels_1,
+  article_pexels_2,
+  article_pexels_3,
 };

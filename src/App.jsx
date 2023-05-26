@@ -6,6 +6,9 @@ import Landing from "./components/Landing/Landing";
 import LandingBackground from "./components/Landing/LandingBackground";
 import Arts from "./components/Arts/Arts";
 import Sketches from "./components/Sketches/Sketches";
+import Articles from "./components/Articles/Articles";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <LandingBackground />
         <Arts />
         <Sketches />
+        <Articles />
+        <Testimonials />
+        <Footer />
       </BrowserRouter>
     </SkeletonTheme>
   );

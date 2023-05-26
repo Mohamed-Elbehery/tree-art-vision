@@ -5,9 +5,12 @@ module.exports = {
     extend: {
       textColor: {
         main: "#d8b454",
+        secondary: "rgb(253 227 159)",
       },
       backgroundColor: {
         main: "#d8b454",
+        deepPink: "#ff1493",
+        darkBlue: "#0000ff",
       },
     },
   },

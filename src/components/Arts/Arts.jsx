@@ -1,5 +1,5 @@
 import ArtsCard from "./ArtsCard";
-import { s11, s12, s21, s22, s23, s31, s32, s33 } from "../../assets";
+import { s11, s12, s21, s22, s32, s33 } from "../../assets";
 
 const Arts = () => {
   const data = [
@@ -22,22 +22,15 @@ const Arts = () => {
         "Interested in our art ? why don't you be an artist yourself ? Join our Workshops now and make you own art and let the artists increase. If you are interested to join our workshops or for any inquiries contact us.",
       imageSrc: [s21, s22],
     },
-    {
-      title: "Unique Designs",
-      description:
-        "Interested in our art ? why don't you be an artist yourself ? Join our Workshops now and make you own art and let the artists increase. If you are interested to join our workshops or for any inquiries contact us.",
-      imageSrc: [s31, s23],
-    },
   ];
 
   return (
     <section className="bg-white pt-20">
+      <h1 className="text-5xl font-light text-center mb-20">
+        Our art sections
+      </h1>
       <div className="container mx-auto">
-        <h1 className="text-5xl font-light text-center mb-20">
-          Our art sections
-        </h1>
-        {/* art Cards */}
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-6">
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center gap-4 px-6">
           {data ? (
             data.map((item, key) => <ArtsCard key={key} {...item} />)
           ) : (
