@@ -20,7 +20,7 @@
 }
 
 .landing-content {
-  @apply relative h-screen bg-black bg-opacity-30 text-center md:space-y-96 space-y-72;
+  @apply relative h-screen bg-black bg-opacity-30 text-center md:space-y-96 xl:space-y-60 space-y-72;
 }
 
 .btn {
