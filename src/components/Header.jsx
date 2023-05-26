@@ -10,7 +10,9 @@ const Header = () => {
     <header className="fixed flex items-center justify-between p-2 px-6 bg-black w-full z-20 text-main">
       {/* Logo */}
       <div>
-        <img className="w-12" src={Logo} alt="logo-img" />
+        <Link to={"/"}>
+          <img className="w-12" src={Logo} alt="logo-img" />
+        </Link>
       </div>
       {/* Menu */}
       <nav className="hidden md:flex mr-3">
