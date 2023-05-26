@@ -21,7 +21,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="bg-white pb-14 overflow-hidden px-4 md:px-0">
+    <section className="bg-white pb-20 overflow-hidden px-4 md:px-0">
       <h1 className="text-center text-5xl">Testimonials</h1>
       <div className="container mx-auto lg:flex lg:items-center lg:justify-center gap-x-14 md:grid md:grid-cols-2 pt-16">
         {data &&
