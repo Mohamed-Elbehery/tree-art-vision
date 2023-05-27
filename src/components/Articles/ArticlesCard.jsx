@@ -1,6 +1,20 @@
-const ArticlesCard = ({ title, imageSrc }) => {
+import { motion } from "framer-motion";
+
+const ArticlesCard = ({ title, imageSrc, index }) => {
   return (
-    <div className="max-w-xs relative lg:mx-0 mx-auto lg:mt-0 mt-6">
+    <motion.div
+      initial={{ opacity: 0, left: 100 }}
+      whileInView={{
+        opacity: 1,
+        left: 0,
+        transition: {
+          duration: 1.1,
+          delay: 0.4 * index,
+          type: "tween",
+        },
+      }}
+      className="max-w-xs relative lg:mx-0 mx-auto lg:mt-0 mt-6"
+    >
       {/* Image */}
       <img
         className="w-full aspect-[15/16] object-cover rounded-xl"
@@ -11,7 +25,7 @@ const ArticlesCard = ({ title, imageSrc }) => {
         <h3 className="text-secondary text-lg">{title}</h3>
         <button className="btn before:right-48">Read Article</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

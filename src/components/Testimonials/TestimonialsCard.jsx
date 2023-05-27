@@ -1,6 +1,6 @@
-import React from "react";
+import { motion } from "framer-motion";
 
-const TestimonialsCard = ({ description, clientName }) => {
+const TestimonialsCard = ({ description, clientName, index }) => {
   const svgIcon = (
     <svg
       className="ml-6 mb-4"
@@ -15,7 +15,19 @@ const TestimonialsCard = ({ description, clientName }) => {
   );
 
   return (
-    <div className="testimonials-card">
+    <motion.div
+      initial={{ opacity: 0, left: 100, transition: { duration: 0 } }}
+      whileInView={{
+        opacity: 1,
+        left: 0,
+        transition: {
+          duration: 1.1,
+          delay: 0.4 * index,
+          type: "tween",
+        },
+      }}
+      className="testimonials-card relative"
+    >
       <div className="testimonials-body">
         {svgIcon}
         <p className="leading-[1.35rem] px-4 line-clamp-3">{description}</p>
@@ -23,7 +35,7 @@ const TestimonialsCard = ({ description, clientName }) => {
           {clientName}
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

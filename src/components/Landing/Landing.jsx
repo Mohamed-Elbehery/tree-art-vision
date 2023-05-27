@@ -1,9 +1,21 @@
+import { motion } from "framer-motion";
+
 const Landing = () => {
   return (
     <section className="text-main flex-col items-center justify-center">
       <div className="landing-content md:pt-52 pt-40">
-        <h1 className="text-5xl md:text-7xl">Art for your class</h1>
-        <button className="btn">Discover</button>
+        <motion.h1
+          animate={{ opacity: 1, transition: { duration: 2.25 } }}
+          className="text-5xl md:text-7xl opacity-0"
+        >
+          Art for your class
+        </motion.h1>
+        <motion.button
+          animate={{ opacity: 1, transition: { duration: 2.25 } }}
+          className="btn opacity-0"
+        >
+          Discover
+        </motion.button>
       </div>
     </section>
   );

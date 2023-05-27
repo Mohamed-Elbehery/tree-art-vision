@@ -24,8 +24,8 @@ const Sketches = () => {
   ];
 
   return (
-    <section className="bg-white md:pt-20 pt-0 md:pb-16">
-      <div className="container mx-auto md:grid md:grid-cols-2 gap-0 overflow-hidden">
+    <section className="bg-white md:pt-14 pt-0 md:pb-16 overflow-hidden">
+      <div className="container mx-auto md:grid md:grid-cols-2 gap-0">
         {/* Left Side */}
         <SketchLeftSide
           imagesList={imagesList.splice(0, imagesList.length / 2)}

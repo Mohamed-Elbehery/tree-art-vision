@@ -25,7 +25,9 @@ const Testimonials = () => {
       <h1 className="text-center text-5xl">Testimonials</h1>
       <div className="container mx-auto lg:flex lg:items-center lg:justify-center gap-x-14 md:grid md:grid-cols-2 pt-16">
         {data &&
-          data.map((item, key) => <TestimonialsCard key={key} {...item} />)}
+          data.map((item, key) => (
+            <TestimonialsCard index={key} key={key} {...item} />
+          ))}
       </div>
     </section>
   );

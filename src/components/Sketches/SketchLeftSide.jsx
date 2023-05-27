@@ -11,7 +11,7 @@ const SketchLeftSide = ({ imagesList }) => {
         </p>
       </div>
       {imagesList.map((item, key) => (
-        <SketchesCard key={key} imageSrc={item} />
+        <SketchesCard direction={"left"} key={key} imageSrc={item} />
       ))}
     </div>
   );

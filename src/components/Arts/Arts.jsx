@@ -25,14 +25,16 @@ const Arts = () => {
   ];
 
   return (
-    <section className="bg-white pt-20">
+    <section className="bg-white pt-20 overflow-hidden">
       <h1 className="text-5xl font-light text-center mb-20">
         Our art sections
       </h1>
       <div className="container mx-auto">
         <div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center gap-4 px-6">
           {data ? (
-            data.map((item, key) => <ArtsCard key={key} {...item} />)
+            data.map((item, key) => (
+              <ArtsCard index={key} key={key} {...item} />
+            ))
           ) : (
             <h1 className="text-center">Loading...</h1>
           )}

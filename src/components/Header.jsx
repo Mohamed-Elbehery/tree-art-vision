@@ -1,17 +1,38 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jpg";
 import MobileMenu from "../assets/menu.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Blurhash } from "react-blurhash";
 
 const Header = () => {
   const [isMenuHidden, setIsMenuHidden] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(() => true);
+    };
+    img.src = Logo;
+  }, []);
 
   return (
     <header className="fixed flex items-center justify-between p-2 px-6 bg-black w-full z-20 text-main">
       {/* Logo */}
       <div>
         <Link to={"/"}>
-          <img className="w-12" src={Logo} alt="logo-img" />
+          {!imageLoaded ? (
+            <Blurhash
+              hash="a2Achm~m009IO;"
+              width={40}
+              height={40}
+              resolutionX={32}
+              resolutionY={32}
+              punch={1}
+            />
+          ) : (
+            <img className="w-12" src={Logo} alt="logo-img" />
+          )}
         </Link>
       </div>
       {/* Menu */}
