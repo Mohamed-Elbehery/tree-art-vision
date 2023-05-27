@@ -8,7 +8,7 @@ import Arts from "./components/Arts/Arts";
 import Sketches from "./components/Sketches/Sketches";
 import Articles from "./components/Articles/Articles";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
