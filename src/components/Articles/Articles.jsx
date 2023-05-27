@@ -24,7 +24,7 @@ const Articles = () => {
   return (
     <section className="bg-white pb-14 overflow-hidden px-6 md:px-0">
       <h1 className="text-center text-5xl pb-12 pt-4">Art Articles</h1>
-      <div className="container mx-auto lg:flex lg:items-center lg:justify-center gap-5 md:grid md:grid-cols-2">
+      <div className="container mx-auto md:flex md:items-center md:justify-center flex-wrap gap-5">
         {data &&
           data.map((item, key) => (
             <ArticlesCard index={key} key={key} {...item} />

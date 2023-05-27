@@ -42,7 +42,7 @@ const ArtsContent = ({ title, description, imageSrc, index }) => {
           type: "tween",
         },
       }}
-      className="max-w-sm relative"
+      className="max-w-sm relative mx-auto md:mx-0"
     >
       <div>
         <img src={imageSrc[imageIndex]} alt="art-img" />

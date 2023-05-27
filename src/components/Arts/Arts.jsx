@@ -30,7 +30,7 @@ const Arts = () => {
         Our art sections
       </h1>
       <div className="container mx-auto">
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center gap-4 px-6">
+        <div className="flex flex-col md:flex-row justify-center flex-wrap gap-4 px-6">
           {data ? (
             data.map((item, key) => (
               <ArtsCard index={key} key={key} {...item} />
