@@ -74,7 +74,7 @@
 }
 
 .testimonials-card {
-  @apply max-w-xs lg:mx-0 mx-auto lg:mt-0 mt-6 bg-black bg-opacity-90 py-10;
+  @apply w-52 lg:mx-0 mx-auto lg:mt-0 mt-6 bg-black bg-opacity-90 py-10;
   transform: skewX(-20deg);
 }
 
@@ -87,7 +87,13 @@
   @apply uppercase text-2xl;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 321px) {
+  .testimonials-card {
+    @apply w-60;
+  }
+}
+
+@media screen and (max-width: 280px) {
   .testimonials-card {
     transform: skewX(0);
   }
