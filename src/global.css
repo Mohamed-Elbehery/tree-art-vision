@@ -70,7 +70,7 @@
 }
 
 .mobile-menu {
-  @apply md:hidden absolute flex items-center justify-center inset-0 w-full h-screen bg-black -z-10 transition-all duration-1000;
+  @apply md:hidden absolute flex items-center justify-center inset-0 h-screen bg-black -z-10 transition-all duration-1000 ease-in;
 }
 
 .testimonials-card {
