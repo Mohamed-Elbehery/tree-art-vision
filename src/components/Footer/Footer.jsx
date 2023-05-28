@@ -12,8 +12,8 @@ const Footer = () => {
         <RightSide />
       </div>
       {/* Bottom Part */}
-      <p className="py-5 text-center text-sm font-light border-t">
-        Copyright ©2022 All rights reserved to Tree Art Vision.
+      <p className="p-5 text-center text-sm font-light border-t">
+        Copyright © 2023 All rights reserved to Tree Art Vision.
       </p>
     </footer>
   );

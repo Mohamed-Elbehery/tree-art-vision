@@ -2,7 +2,7 @@ import { logo } from "../../assets";
 
 const LeftSide = () => {
   return (
-    <div className="px-32 md:w-[50%] lg:w-[33%] md:px-0">
+    <div className="px-12 md:w-[50%] lg:w-[33%] md:px-0">
       <div>
         <img className="w-16 mx-auto my-8 mb-6" src={logo} alt="" />
       </div>

@@ -2,7 +2,7 @@ import { facebook, instagram } from "../../assets";
 
 const MiddleSide = () => {
   return (
-    <div className="mt-8 px-32 md:w-[50%] lg:w-[33%] md:px-0">
+    <div className="mt-8 px-12 md:w-[50%] lg:w-[33%] md:px-0">
       <h1 className="heading text-center">Contact INFO</h1>
       <div className="flex justify-center gap-4 mt-4">
         <div className="hover:bg-darkBlue bg-white p-3 rounded-full cursor-pointer transition-all duration-300 ease-linear">
