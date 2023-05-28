@@ -1,26 +1,26 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SkeletonTheme } from "react-loading-skeleton";
 
-import Header from "./components/Header";
-import Landing from "./components/Landing/Landing";
-import LandingBackground from "./components/Landing/LandingBackground";
-import Arts from "./components/Arts/Arts";
-import Sketches from "./components/Sketches/Sketches";
-import Articles from "./components/Articles/Articles";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home";
+import Sketches from "./pages/Sketches";
+import DecorativePieces from "./pages/DecorativePieces";
+import Workshops from "./pages/Workshops";
+import About from "./pages/About";
 
 function App() {
   return (
     <SkeletonTheme baseColor="#404040" highlightColor="#525252">
       <BrowserRouter>
         <Header />
-        <Landing />
-        <LandingBackground />
-        <Arts />
-        <Sketches />
-        <Articles />
-        <Testimonials />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sketches" element={<Sketches />} />
+          <Route path="/decorative-pieces" element={<DecorativePieces />} />
+          <Route path="/workshops" element={<Workshops />} />
+          <Route path="/about-us" element={<About />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </SkeletonTheme>

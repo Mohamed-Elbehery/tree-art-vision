@@ -7,11 +7,8 @@ const Footer = () => {
     <footer className="text-white bg-black flex flex-col">
       {/* Top Part */}
       <div className="md:container md:mx-auto md:flex md:flex-row md:flex-wrap">
-        {/* Left Side */}
         <LeftSide />
-        {/* Middle Side */}
         <MiddleSide />
-        {/* Right Side */}
         <RightSide />
       </div>
       {/* Bottom Part */}

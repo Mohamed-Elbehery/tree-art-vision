@@ -11,16 +11,16 @@ const RightSide = () => {
           <Link to={"/"}>Home</Link>
         </li>
         <li className="hover:text-main">
-          <Link to={"/"}>Sketches</Link>
+          <Link to={"/sketches"}>Sketches</Link>
         </li>
         <li className="hover:text-main">
-          <Link to={"/"}>Decorative Pieces</Link>
+          <Link to={"/decorative-pieces"}>Decorative Pieces</Link>
         </li>
         <li className="hover:text-main">
-          <Link to={"/"}>Workshops</Link>
+          <Link to={"/workshops"}>Workshops</Link>
         </li>
         <li className="hover:text-main">
-          <Link to={"/"}>About</Link>
+          <Link to={"/about-us"}>About</Link>
         </li>
       </ul>
     </div>

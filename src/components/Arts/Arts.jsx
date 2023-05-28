@@ -1,13 +1,12 @@
 import ArtsCard from "./ArtsCard";
 import { s11, s12, s21, s22, s32, s33 } from "../../assets";
 
-const Arts = () => {
+const Arts = ({ artRef }) => {
   const data = [
     {
       title: "Sketches",
       description:
         "Discover our Sketches section that includes various artworks of multiple topics and materials. Our Sketches are drawn using materials that are not capable to be used as decorations so they are not for sale.",
-
       imageSrc: [s11, s12],
     },
     {
@@ -25,7 +24,7 @@ const Arts = () => {
   ];
 
   return (
-    <section className="bg-white pt-20 overflow-hidden">
+    <section ref={artRef} className="bg-white pt-20 overflow-hidden">
       <h1 className="text-5xl font-light text-center mb-20">
         Our art sections
       </h1>
