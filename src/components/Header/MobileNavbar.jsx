@@ -1,10 +1,7 @@
 import { NavLink } from "react-router-dom";
 import MobileMenu from "../../assets/menu.webp";
-import useHandleNavigation from "../../hooks/useHandleNavigation";
 
-const MobileNavbar = () => {
-  const { isMenuHidden, setIsMenuHidden, handleClick } = useHandleNavigation();
-
+const MobileNavbar = ({ isMenuHidden, setIsMenuHidden, handleClick }) => {
   return (
     <>
       <img

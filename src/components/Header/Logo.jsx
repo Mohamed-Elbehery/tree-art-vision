@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { logo } from "../../assets";
 
-const Logo = () => {
+const Logo = ({ handleClick }) => {
   return (
     <div>
-      <Link to={"/"}>
+      <Link onClick={handleClick} to={"/"}>
         <img className="w-12" src={logo} alt="logo-img" />
       </Link>
     </div>
