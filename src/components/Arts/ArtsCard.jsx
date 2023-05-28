@@ -4,6 +4,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const ArtsContent = ({ title, description, imageSrc, index }) => {
   const [imageIndex, setImageIndex] = useState(0);
+  const [firstTime, setFirstTime] = useState(true);
   const svgIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,13 +23,17 @@ const ArtsContent = ({ title, description, imageSrc, index }) => {
   );
 
   useEffect(() => {
-    let timer = setInterval(() => {
-      if (imageIndex >= 1) setImageIndex(() => 0);
-      else setImageIndex(() => imageIndex + 1);
-    }, 3000);
+    let timer = setInterval(
+      () => {
+        if (imageIndex >= 1) setImageIndex(() => 0);
+        else setImageIndex(() => imageIndex + 1);
+        setFirstTime(false);
+      },
+      firstTime ? 6000 : 3000
+    );
 
     return () => clearInterval(timer);
-  }, [imageIndex]);
+  }, [imageIndex, firstTime]);
 
   return (
     <motion.div
