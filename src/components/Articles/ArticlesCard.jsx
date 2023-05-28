@@ -13,6 +13,7 @@ const ArticlesCard = ({ title, imageSrc, index }) => {
           type: "tween",
         },
       }}
+      viewport={{ once: true }}
       className="max-w-xs relative lg:mx-0 mx-auto lg:mt-0 mt-6"
     >
       {/* Image */}

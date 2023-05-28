@@ -42,6 +42,7 @@ const ArtsContent = ({ title, description, imageSrc, index }) => {
           type: "tween",
         },
       }}
+      viewport={{ once: true }}
       className="max-w-sm relative mx-auto md:mx-0"
     >
       <div>

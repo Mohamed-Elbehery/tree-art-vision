@@ -8,6 +8,7 @@ const SketchesCard = ({ direction, imageSrc }) => {
         left: 0,
         transition: { duration: 0.75, type: "tween", delay: 0.1 },
       }}
+      viewport={{ once: true }}
       className="w-[125%] relative"
     >
       <img

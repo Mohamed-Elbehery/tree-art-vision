@@ -26,6 +26,7 @@ const TestimonialsCard = ({ description, clientName, index }) => {
           type: "tween",
         },
       }}
+      viewport={{ once: true }}
       className="testimonials-card relative"
     >
       <div className="testimonials-body">
