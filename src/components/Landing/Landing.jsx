@@ -6,7 +6,7 @@ const Landing = ({ artRef }) => {
       <div className="landing-content">
         <motion.h1
           animate={{ opacity: 1, transition: { duration: 2.25 } }}
-          className="text-5xl md:text-7xl opacity-0"
+          className="text-4xl md:text-6xl opacity-0"
         >
           Art for your class
         </motion.h1>

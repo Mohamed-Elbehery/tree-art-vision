@@ -23,7 +23,7 @@ const ArticlesCard = ({ title, imageSrc, index }) => {
         alt="pexel-img"
       />
       <div className="absolute py-4 left-0 bottom-0 bg-black bg-opacity-60 w-full text-center space-y-3 rounded-xl rounded-tr-3xl rounded-tl-3xl">
-        <h3 className="text-secondary text-lg">{title}</h3>
+        <h1 className="text-secondary text-lg">{title}</h1>
         <button className="btn before:right-48">Read Article</button>
       </div>
     </motion.div>

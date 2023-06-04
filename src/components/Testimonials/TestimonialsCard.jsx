@@ -32,9 +32,9 @@ const TestimonialsCard = ({ description, clientName, index }) => {
       <div className="testimonials-body">
         {svgIcon}
         <p className="leading-[1.35rem] px-4 line-clamp-3">{description}</p>
-        <h3 className="text-lg text-right font-extralight mr-4">
+        <h1 className="text-lg text-right font-extralight mr-4">
           {clientName}
-        </h3>
+        </h1>
       </div>
     </motion.div>
   );
